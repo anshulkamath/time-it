@@ -1,0 +1,19 @@
+.start-button {
+  border: 1em;
+  border-radius: 20px;
+  background: var(--white-color);
+  box-shadow: none;
+  align-self: center;
+  width: 25%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.start-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px; 
+}
+
+.start-button-text {
+  font-size: 4em;
+  color: var(--secondary-color);
+}
