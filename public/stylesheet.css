@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  background-color: inherit;
+  font-family: Nunito;
+  --transition-type: all .3s ease-in-out;
+  --primary-color: #3e000c;
+  --secondary-color: #fb4b4e;
+  --tertiary-color: #7c0b2b;
+  --white-color: #f6f6f6;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--primary-color) !important;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.nunito {
+  font-family: Nunito;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+}
+
+.primary {
+  color: #3e000c;
+}
+
+.secondary {
+  color: #fb4b4e;
+}
+
+.tertiary {
+  color: #7c0b2b;
+}
+
+.white {
+  color: #f6f6f6;
+}

@@ -1,0 +1,61 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "airbnb",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
+    },
+    "rules": {
+        "@typescript-eslint/no-unused-vars": ["warn"],
+        "@typescript-eslint/no-empty-function": "off",
+        "react/function-component-definition": "off",
+        "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx", ".js", ".ts"] }],
+        "react/jsx-no-useless-fragment": "off",
+        "import/extensions": "off",
+        "no-unused-vars": "off",
+        "no-shadow": "off",
+        "prettier/prettier": "error",
+        "quotes": ["error", "single", "avoid-escape"],
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "import/order": ["error", {
+            "alphabetize": {
+                "order": "asc"
+            },
+            "pathGroups": [
+              {
+                "pattern": "react*",
+                "group": "external"
+              }
+            ],
+            "groups": ["external", "internal", "parent", ["sibling", "index"]],
+            "newlines-between": "always-and-inside-groups"
+        }]
+    }
+}
